@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap/CSS/bootstrap.min.css">
+    <script src="bootstrap/JS/bootstrap.min.js"></script>
+    <script src="bootstrap/JS/jquery-3.3.1.slim.min.js"></script>
+    <script src="bootstrap/JS/popper.min.js"></script>
+
+    <title>Bootstrap Assignment</title>
+   
+</head>
+<style>
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.cforms {
+    background-color:dodgerblue;
+    color:white; 
+    width: 700px; 
+    padding-top: 20px; 
+    border-radius: 12px;
+}
+    button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+</style>
+<body>
+    <div class="topnav">
+        <a class="active" href="">Home</a>
+        <a href="" style="float: right">Back</a>
+    </div>
+ <br>     
+<div class="container mt-3">
+    <div id="never" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#never" data-slide-to="0" class="active"></li>
+          <li data-target="#never" data-slide-to="1"></li>
+          <li data-target="#never" data-slide-to="2"></li>
+        </ul>
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="pleis1.jpg" alt="" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="pleis2.jpg" alt="" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="pleis3.jpg" alt="" width="1100" height="500">
+          </div>
+        </div>
+        
+        <a class="carousel-control-prev" href="#never" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#never" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>      
+</div>
+    <br>
+<div style="padding-top: 60px;">
+</div>
+    <div class="container cforms">
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="firstname"><b>First Name</b></label>
+                        <input type="text" name="firstname" id="firstname" class="form-control">
+                    </div>
+                </div>
+                <div class="col">
+                        <div class="form-group">
+                            <label for="lastname"><b>Last Name</b></label>
+                            <input type="text" name="lastname" id="lastname" class="form-control">
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="birthdate"><b>Birth Date</b></label>
+                        <input type="text" name="birthdate" id="birthdate" class="form-control">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="country"><b>Country</b></label>
+                        <input type="text" name="country" id="country" class="form-control">
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" name="password" id="password" class="form-control">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="lastname"><b>Confirm Password</b></label>
+                    <input type="password" name="confirmpassword" id="confirmpassword" class="form-control">
+                </div>
+            </div>
+        </div>
+            <div class="form-group">
+                <label for="email"><b>Email:</b></label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+<div style="padding-top: 500px;">
+</div>
+</body>
+</html>
